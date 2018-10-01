@@ -1,0 +1,7 @@
+<%= form_for @song do |f| %>
+<%= f.label :mood %>
+<%= f.collection_select :mood_id, Mood.all, :id, :emoji%>
+<%= f.label :weather %>
+<%= f.collection_select :weather_id, Weather.all, :id, :weather_type %>
+<%= f.submit "Play Song" %>
+<% end %>
