@@ -4,5 +4,6 @@ class WeathersController < ApplicationController
   end
 
   def show
+    @weather = Weather.find(params[:id])
   end
 end
