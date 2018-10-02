@@ -8,8 +8,10 @@ class SongsController < ApplicationController
   end
 
   def new
+    @weather = Weather.all
     @mood = Mood.all
     @song = Song.new
+    redirect_to songs_path(@song)
   end
 
   def create

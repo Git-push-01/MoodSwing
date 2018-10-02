@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_01_174945) do
+ActiveRecord::Schema.define(version: 2018_10_02_204526) do
 
   create_table "moods", force: :cascade do |t|
     t.string "emoji"
@@ -23,17 +23,16 @@ ActiveRecord::Schema.define(version: 2018_10_01_174945) do
     t.integer "weather_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "name"
   end
 
   create_table "songs", force: :cascade do |t|
-    t.integer "mood_id"
-    t.integer "weather_id"
     t.integer "playlist_id"
     t.string "song_name"
     t.string "artist_name"
+    t.string "url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "url"
   end
 
   create_table "weathers", force: :cascade do |t|
