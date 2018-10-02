@@ -1,3 +1,6 @@
-<h1>Your Mood and Weather Choices Say You are Feeling like this Song</h1>
+<h1 id="song-name-header">Your Mood and Weather Choices Say You are Feeling like this Song</h1>
 
 <iframe width="1000" height="500" src='https://www.youtube.com/embed/<%=@song.url%>' frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+<h3><%= link_to "Back", playlist_path(@song.playlist), class: "song-link" %> </h3>

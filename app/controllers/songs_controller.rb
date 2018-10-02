@@ -5,17 +5,19 @@ class SongsController < ApplicationController
 
   def show
     @song = Song.find(params[:id])
+    
   end
 
   def new
+    @playlist = Playlist.all
     @weather = Weather.all
     @mood = Mood.all
     @song = Song.new
-    redirect_to songs_path(@song)
+    #redirect_to songs_path(@song)
   end
 
   def create
-    @songs = Song.all
+    # @songs = Song.all
     # if @mood == "happy" && @weather == "sunny"
     # elsif @mood == "happy" && @weather == "cloudy"
     # elsif @mood == "happy" && @weather == "rainy"

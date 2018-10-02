@@ -13,3 +13,28 @@
  *= require_tree .
  *= require_self
  */
+body {
+  background-color: black;
+  color:white;
+}
+
+/* #song-name-header {
+  font-style:normal;
+} */
+
+h1#song-name-header {
+  font-style:normal;
+}
+h2#song-name-header {
+  font-style:normal;
+}
+h3#song-name-header {
+  font-style: normal;
+}
+/* div > p, h1 {
+  border: 1px solid red;
+} */
+
+.song-link {
+  color: white;
+}
