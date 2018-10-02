@@ -6,4 +6,9 @@ class WeathersController < ApplicationController
   def show
     @weather = Weather.find(params[:id])
   end
+
+  def new
+    @mood = Mood.all
+    @weather = Weather.new
+  end
 end

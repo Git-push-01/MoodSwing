@@ -8,6 +8,7 @@ class SongsController < ApplicationController
   end
 
   def new
+    @mood = Mood.all
     @song = Song.new
   end
 
