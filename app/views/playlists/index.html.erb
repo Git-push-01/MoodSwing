@@ -1,7 +1,22 @@
-<h1>All Playlists:</h1>
+<!-- <h1>All Playlists:</h1>
 <h3><% @playlists.each do |playlist| %></h3>
 <h3><%= link_to playlist.name, playlist_path(playlist), class: "song-link" %></h3>
 
 
 
-<%end%>
+<%end%> -->
+
+<div class="header-container">
+<h1 class= "blink_me" >Welcome to Mood Swing</h1>
+</div>
+
+
+<div class="flex-container">
+<%= form_for @playlist, url: user_playlist_path do |f| %>
+<%= f.label :mood %>
+<%= f.collection_select :mood_id, @mood, :id, :emoji%>
+<%= f.label :weather %>
+<%= f.collection_select :weather_id, @weather, :id, :weather_type %>
+<%= f.submit "Mood Swing" %>
+<% end %>
+</div>

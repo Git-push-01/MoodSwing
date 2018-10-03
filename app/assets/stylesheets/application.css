@@ -16,6 +16,31 @@
 body {
   background-color: black;
   color:white;
+
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  margin-top: 200px;
+  font-size: 40px;
+
+
+}
+.blink_me {
+  animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+  50% { opacity: 0; }
+}
+
+.header-container{
+  display: flex;
+  justify-content: center;
+  height: 0px;
+  margin-top: 50px;
+
 }
 
 /* #song-name-header {
@@ -30,6 +55,13 @@ h2#song-name-header {
 }
 h3#song-name-header {
   font-style: normal;
+}
+#playlist_mood_id {
+  font-size: inherit;
+
+}
+#playlist_weather_id {
+  font-size: inherit;
 }
 /* div > p, h1 {
   border: 1px solid red;

@@ -1,7 +1,14 @@
+<div class="header-container">
+<h1>Welcome to Mood Swing</h1>
+</div>
+
+
+<div class="flex-container">
 <%= form_for @playlist do |f| %>
 <%= f.label :mood %>
-<%= f.collection_select :mood_id, @mood, :id, :emoji%>
+<%= f.collection_select :mood_id, @moods, :id, :emoji%>
 <%= f.label :weather %>
-<%= f.collection_select :weather_id, @weather, :id, :weather_type %>
-<%= f.submit "Play Song" %>
+<%= f.collection_select :weather_id, @weathers, :id, :weather_type %>
+<%= f.submit "Mood Swing" %>
 <% end %>
+</div>
