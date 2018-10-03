@@ -182,7 +182,7 @@ Song.create(playlist_id: @happycloudy.id, song_name: "In My Feelings", artist_na
 
 #cloudy bleh
 Song.create(playlist_id: @blahcloudy.id, song_name: "Swimming Pools (Drank)", artist_name: "Kendrick Lamar", url: "B5YNiCfWC3A")
-Song.create(playlist_id: @blahcloudy.id, song_name: "Learn To Fly", artist_name: "Foo Fighters", url: "fly1VQ_3sBZEm0") #1VQ_3sBZEm0s
+Song.create(playlist_id: @blahcloudy.id, song_name: "Learn To Fly", artist_name: "Foo Fighters", url: "1VQ_3sBZEm0") #1VQ_3sBZEm0s
 Song.create(playlist_id: @blahcloudy.id, song_name: "1979", artist_name: "Smashing Pumpkins", url: "4aeETEoNfOg")
 Song.create(playlist_id: @blahcloudy.id, song_name: "Otherside", artist_name: "Red Hot Chilli Peppers", url: "rn_YodiJO6k")
 
