@@ -48,19 +48,30 @@ body {
 } */
 
 h1#song-name-header {
+  font-weight: 400;
+  font-family: "Knockout 48 A";
   font-style:normal;
 }
 h2#song-name-header {
+  font-weight: 400;
+  font-family: "Knockout 48 A";
   font-style:normal;
 }
 h3#song-name-header {
+  font-weight: 400;
+  font-family: "Knockout 48 A";
   font-style: normal;
 }
 #playlist_mood_id {
+
+  font-weight: 400;
+  font-family: "Knockout 48 A";
   font-size: inherit;
 
 }
 #playlist_weather_id {
+  font-weight: 400;
+  font-family: "Knockout 48 A";
   font-size: inherit;
 }
 /* div > p, h1 {
