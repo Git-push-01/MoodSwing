@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
+ruby ENV['CUSTOM_RUBY_VERSION'] || '2.5.1'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "2.5.1"
+
 gem 'devise'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
