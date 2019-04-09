@@ -1,4 +1,6 @@
 class PlaylistsController < ApplicationController
+
+
   def index
     @song = Song.all
     @playlist = Playlist.new
@@ -23,6 +25,7 @@ class PlaylistsController < ApplicationController
   def user_playlist
 
     @playlist = Playlist.find_by(mood_id:params["playlist"]["mood_id"],weather_id:params["playlist"]["weather_id"])
+
     redirect_to playlist_path(@playlist)
     # look at form inputs (mood_id and weather_id)
     # find playlist associated with those
