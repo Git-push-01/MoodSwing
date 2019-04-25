@@ -1,9 +1,10 @@
 <div class="header-container text-center">
 <h1>Welcome to Mood Swing</h1>
+
 </div>
 
 
-<div class="flex-container">
+<div>
 <%= form_for @playlist do |f| %>
 <%= f.label :mood %>
 <%= f.collection_select :mood_id, @moods, :id, :emoji%>

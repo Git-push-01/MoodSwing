@@ -1,9 +1,9 @@
 
-<div class="all-songs text-center">
-<h1 class="header-container" >All Songs:</h1>
-<h3 class="header-container" ><%= link_to "Back", playlists_path, class: "song-link" %> </h3>
+<div class="all-songs text-cente"style="background-image: url(<%= asset_path 'bg-masthead.jpg' %>) " >
+<h1>All Songs:</h1>
+<h3><%= link_to "Back", playlists_path, class: "song-link" %> </h3>
 <h3><% @songs.each do |song| %></h3>
-<h3 class="header-container" ><%=link_to "#{song.song_name} - #{song.artist_name}", song_path(song), class: "song-link"%></h3>
+<h3 ><%=link_to "#{song.song_name} - #{song.artist_name}", song_path(song), class: "song-link"%></h3>
 
 
 

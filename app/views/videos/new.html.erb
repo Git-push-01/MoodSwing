@@ -1,8 +1,8 @@
-<h1>New Video</h1>
+<h1> Add New Video</h1>
 
 <%= render 'form', video: @video %>
 
 
 <%= link_to 'Back', videos_path %>
-<h3 class="header-container" ><%=link_to "All Songs", songs_path, class: "song-link" %></h3>
-<h3 class="header-container" ><%= link_to "Back playlists", playlists_path, class: "song-link" %> </h3>
+<%=link_to "All Songs", songs_path, class: "song-link" %>
+<%= link_to "Back playlists", playlists_path, class: "song-link" %>

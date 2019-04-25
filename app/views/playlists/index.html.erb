@@ -8,6 +8,7 @@
 
 <div class="header-container text-center">.
 <h1>Welcome to Mood Swing</h1>
+<h3>Choose your Mood and Weather</h3>
 </div>
 
 
@@ -21,7 +22,10 @@
 <%= f.submit "Mood Swing" %>
 <% end %>
 
-
-<%= link_to 'New Video', new_video_path %>
-<%= link_to 'My Videos', videos_path %>
+<div>
+<%= link_to 'Add New Videos', new_video_path %>
+</div>
+<div>
+<%= link_to 'View My Videos', videos_path %>
+</div>
 </div>

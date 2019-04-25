@@ -1,14 +1,17 @@
-<div class="playlist-container text-center">
-<h1 class="header-container">Your Mood and Weather Choices Say You are Feeling these Songs</h1>
+<div class="playlist-container text-center text-black">
+<h1>Your Mood & Weather Choices</h1>
 
 
 <h3><% @playlist.songs.each do |song| %></h3>
-<h3 class="header-container" ><%=link_to "#{song.song_name} - #{song.artist_name}", song_path(song), class: "song-link" %></h3>
+<h3><%=link_to "#{song.song_name} - #{song.artist_name}", song_path(song), class: "song-link" %></h3>
 
 
 
 <%end%>
-
-<h3 class="header-container" ><%=link_to "All Songs", songs_path, class: "song-link" %></h3>
-<h3 class="header-container" ><%= link_to "Back to Playlists", playlists_path, class: "song-link" %> </h3>
+</div>
+<div>
+<%=link_to "All Songs", songs_path, class: "song-link" %>
+</div>
+<div>
+<%= link_to "Back to Playlists", playlists_path, class: "song-link" %>
 </div>
