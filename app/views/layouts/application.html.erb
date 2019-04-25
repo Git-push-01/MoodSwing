@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
-  <head>
+  <head >
     <title>MoodSwing</title>
+
+
+
+
+<%= stylesheet_link_tag 'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css' %>
+
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+
   </head>
 
-  <body>
+  <body style="background-image: url(<%= asset_path 'bg-masthead.jpg' %>)" class="text-black text-center"  >
     <% if notice %>
   <p class="alert alert-success"><%= notice %></p>
 <% end %>

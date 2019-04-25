@@ -6,20 +6,22 @@
 
 <%end%> -->
 
-<div class="header-container">
-<h1 class= "blink_me" >Welcome to Mood Swing</h1>
+<div class="header-container text-center">.
+<h1>Welcome to Mood Swing</h1>
 </div>
 
 
-<div class="flex-container">
+<div class="flex-container text-center" >
 <%= form_for @playlist, url: user_playlist_path do |f| %>
 <%= f.label :mood %>
 <%= f.collection_select :mood_id, @mood, :id, :emoji%>
 <%= f.label :weather %>
 <%= f.collection_select :weather_id, @weather, :id, :weather_type %>
+
 <%= f.submit "Mood Swing" %>
 <% end %>
 
-</div>
+
 <%= link_to 'New Video', new_video_path %>
 <%= link_to 'My Videos', videos_path %>
+</div>

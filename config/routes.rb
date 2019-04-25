@@ -1,10 +1,14 @@
 Rails.application.routes.draw do
+
+
   resources :videos
   devise_for :users
   resources :weathers
   resources :songs
   resources :playlists
   resources :moods
+
+
 
 
 
