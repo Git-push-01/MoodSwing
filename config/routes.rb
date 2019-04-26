@@ -2,7 +2,9 @@ Rails.application.routes.draw do
 
 
   resources :videos
-  devise_for :users
+  devise_scope :users do
+    get "/signup" => "devise/registrations#new"
+end
   resources :weathers
   resources :songs
   resources :playlists
