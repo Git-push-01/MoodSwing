@@ -19,6 +19,6 @@ def after_sign_out_path_for(resource_or_scope)
           payload[:level] = "ERROR"
         end
 end
-
+# for the purpose of pushing code to see if datadog monitor is working
 
 end
