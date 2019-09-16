@@ -1,6 +1,9 @@
 require_relative 'boot'
 
 require 'rails/all'
+require 'datadog/statsd'
+statsd = Statsd.new('localhost', 8125)
+statsd.increment('rubyapp.pages.views')
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
